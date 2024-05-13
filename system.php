@@ -6,10 +6,10 @@ error_reporting(E_ALL);
 
 
 
-require_once __DIR__."/system/lib/df.php";
-require_once __DIR__."/system/lib/request.php";
-require_once __DIR__."/system/lib/functions.php";
-require_once __DIR__."/system/lib/db.php";
+require_once __DIR__."/lib/df.php";
+require_once __DIR__."/lib/request.php";
+require_once __DIR__."/lib/functions.php";
+require_once __DIR__."/lib/db.php";
 
 
 
@@ -18,5 +18,5 @@ $__LOGIN_NAME__ = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $_SERVER
 $__LOGIN_TIME__ = 3600 * 24 * 360; // 1 Year
 
 
-// $df = new DF(__DIR__."/system/.htdatabase.json");
+// $df = new DF(__DIR__."/.htdatabase.json");
 // $db = new DB("localhost", "db_name","db_user","db_pass");
